@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let'sChat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark"
+        style="background-image: linear-gradient(rgb(218, 42, 42), rgb(105, 5, 5));">
+        <div class="container-fluid">
+            <a href="" class="brand"><i class="fa fa-message fa-fw" aria-hidden="true"></i>  Let'sChat</a>
+            <button type="button" class="btn"><a id="leave_btn" href="index.html">Leave Room</a></button>
+        </div>
+    </nav>
+    <div class="up">
+        <div class="container">
+            <div class="card card11" id="main-box">
+                <div class="card-body card2" id="chat-blocks">
+
+                </div>
+
+            </div>
+            <div class="card card11" id="side-bar">
+                <div class="card-body card1">
+                    <span id="head1" class="card1-comp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chat-square-quote-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm7.194 2.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 4C4.776 4 4 4.746 4 5.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 7.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 4c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z" />
+                        </svg>
+                        <h5 class="card-title">Room Name</h5>
+                    </span>
+                    <span id="head1" class="card1-comp room-url">
+                        <h5 id="room_name" class="card-title room-name"></h5>
+                    </span>
+                    <hr>
+                    <span id="head1" class="card1-comp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-people" viewBox="0 0 16 16">
+                            <path
+                                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                        </svg>
+                        <h5 class="card-title">Users</h5>
+                    </span>
+                    <ul class="list-group">
+                        <!-- <li class="list-group-item" style="    background-color: transparent;
+                        color: azure;
+                        border-color: transparent;">An item</li>
+                        <li class="list-group-item" style="    background-color: transparent;
+                        color: azure;
+                        border-color: transparent;">An item</li>
+                        <li class="list-group-item" style="    background-color: transparent;
+                        color: azure;
+                        border-color: transparent;">An item</li> -->
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div class="input-group mb-3">
+                <form id="form-chat">
+                    <input type="text" class="form-control" id="msg" placeholder="Enter Message"
+                        aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                    <button class="btn " type="submit" id="button-addon2">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.5/qs.min.js"
+        integrity="sha512-JduLFfiB5t9F2dYayaCCWObe/SeciiMhX2MHAKGvQ22crUA/Sb1l4elG5A7r7Bu1tP2rs1cU5lR1Irx/govVdg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

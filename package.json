@@ -1,0 +1,21 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Chat App having different rooms.",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap-icons": "^1.7.2",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Jay",
+  "license": "MIT"
+}

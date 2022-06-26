@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(232, 230, 230);
+}
+.brand{
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.5rem;
+    color: white;
+    pointer-events: none;
+}
+.btn {
+    line-height: 1.3;
+    background-color: rgb(224, 126, 126);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(218, 42, 42);
+
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+.navbar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    
+}
+.card11{
+    /* background-color: blueviolet; */
+    border: none;
+    overflow: auto;
+    height: 35rem;
+    border-radius: 0px;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+
+}
+#side-bar{
+    width: 20%;
+}
+#main-box{
+    width: 80%;
+}
+.mssg{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    margin: 15px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    background-color: rgb(234, 104, 104);
+    color: white;
+}
+.mssg-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.up{
+    text-align: center;
+    /* border: 2px solid black; */
+    /* margin: 5px; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    border-radius: 0px;
+}
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group{
+    /* border: 2px solid black; */
+    padding: 10px;
+    background-image: linear-gradient(rgb(105, 5, 5), rgb(105, 5, 5));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+#head1{
+    display: flex;
+}
+
+/* .list-group{
+    background: transparent;
+    color: azure;
+} */
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgb(218, 42, 42), rgb(105, 5, 5));
+
+}
+.card1-comp{
+    margin-top: 0.5rem;
+    color: azure;
+}
+.bi{
+    margin-right: 8px;
+}
+.room-name{
+    padding: 8px;
+    /* width: 8rem; */
+    background-color: rgb(224, 126, 126);
+}
+.user-name{
+    padding: 8px;
+    /* width: 8rem; */
+    /* background-color: rgb(174, 140, 212); */
+}
+.input-group button{
+    border-radius: 0px;
+    margin-left: 10px;
+    color: white;
+    border: none;
+    border-color: white;
+}
+.name-of-user{
+    color: rgb(65, 25, 25);
+}
+#leave_btn{
+    text-decoration: none;
+    color: white
+}
+@media (max-width: 992px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    #side-bar{
+        width: 100%;
+    }
+    #main-box{
+        width: 100%;
+    }
+}

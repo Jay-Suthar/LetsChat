@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: rgb(232, 230, 230);
+
+}
+
+.box {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+.card {
+    width: 30rem;
+    margin: 0px 10px;
+    background-image: linear-gradient(rgb(218, 42, 42), rgb(105, 5, 5));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand {
+    pointer-events: none;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.form-label {
+    color: white;
+}
+
+.btn {
+    line-height: 1.5;
+    background-color: rgb(224, 126, 126);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(218, 42, 42);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
